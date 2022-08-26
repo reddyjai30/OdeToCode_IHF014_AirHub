@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.IHF014.airhub">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AirHub">
+        <activity
+            android:name="com.IHF014.airhub.ContactUs"
+            android:exported="false" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.IHF014.airhub.LostAndFound"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.Hotels.HotelSearchResults"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.Hotels.HotelsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.Hotels.HotelsDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlightAcitivities.ExploreAirport"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FeedbackForm"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.ChatBotActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FAQ_main"
+            android:exported="true"
+            android:label="FAQ"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.TrackCharges"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity android:name="com.microsoft.identity.client.BrowserTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.ITH014.airhub"
+                    android:path="/0KSITcEtDY/E9LCroVuVetYhf20="
+                    android:scheme="msauth"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlightAcitivities.FlightDetailsActivity2"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage2" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.TrainInfo"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlightAcitivities.FlightSearchDetails"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage2" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlightAcitivities.FromToFlightResults"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlightAcitivities.FlightsDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage2" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.RestaurantsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage2" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.ShoppingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage2" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.FlightAcitivities.FlightSearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage"></activity>
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.Transit_Bus"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.Transit_Cab"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.BusRoute"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Actvities.Transit_Parking"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.Transit_Cab_Ola_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.Transit_Train"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Route"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+        <activity
+            android:name="com.IHF014.airhub.Fragments.Transit.Fly_City"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPage" />
+    </application>
+
+</manifest>
